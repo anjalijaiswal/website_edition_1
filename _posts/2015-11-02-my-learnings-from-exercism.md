@@ -1,4 +1,10 @@
 <!-- learnings.md -->
+---
+layout: post
+title: "Anjali Jaiswal's Blog"
+date: 2015-11-02
+---
+
 One day i stumbled upon this awesome site called ["Exercism.io"](http://exercism.io/). It mainly focuses on improving your skills via Deep Practice & Crowdsourced Mentorship, Strengthening your problem-solving skills by guiding others through the process. I got hooked onto it and  then i thought why not share my learnings with you all. One alert though, i am a ruby programmer so they are mostly ruby based.
 
 Things To Keep In Mind
