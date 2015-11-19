@@ -1,43 +1,320 @@
+/*!
+ * Start Bootstrap - One Page Wonder HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin-top: 50px;
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-size: 18px;
+    color: #404040;
+    position: relative;
+    background: #FFF;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
+p { 
+    line-height: 1.5;
+    margin: 30px 0;
+    font-size: 1.1em;
     line-height: 1.4em;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+p a {
+    text-decoration: underline;
+    color: #404040;
+}
+code {
+    word-break: break-word;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: underline;
+    color: #404040;
+}
+
+a:hover,
+a:focus {
+    color: #0085a1;
+}
+blockquote {
+    color: #808080;
+    font-style: italic;
+}
+
+
+hr.small {
+    max-width: 100px;
+    margin: 15px auto;
+    border-width: 4px;
+    border-color: inherit;
+    border-radius: 3px;
+}
+
+.contact{
+    /*font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    line-height: 1.6em;
+    font-family: "proxima-nova";
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(26,26,26,.6);
+}
+
+.contact h2{
+    font-family: "proxima-nova";
+    font-size: 22px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    color: #4a4a4a;
+}
+
+.post-heading{
+    padding: 30px 0;
+    background: #F5F5F5; 
+}
+.main-explain-area {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 15px inherit;
+}
+
+.hideme {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
-ul.posts li {
-    list-style: none;
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
+
+.headline {
+    padding: 120px 0;
+}
+
+.headline h1 {
+    font-size: 130px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+/* --- Footer --- */
+
+footer {
+  padding: 30px 0;
+  background: #F5F5F5;
+  border-top: 1px #EAEAEA solid;
+  margin-top: 35px;
+  font-size: 14px;
+  height: 142px;
+}
+
+footer a {
+  color: #404040;
+  text-decoration: none;
+}
+
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+}
+footer .copyright {
+  font-family: Open Sans;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer .theme-by {
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+.push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+  footer .footer-links {
+    font-size: 18px;
+  }
+  footer .copyright {
+    font-size: 16px;
+  }
+}
+ 
+
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
+
+
+
