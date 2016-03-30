@@ -59,14 +59,14 @@ end
 **Bob:** Start simple. Try to make test pass in a very easy way.
 
 **Etl:** Use of each_with_object:
-  
+
 {% highlight ruby linenos %}
 input.each_with_object({}) do |(score, letters), result|
   letters.each do |letter|
     result[letter.downcase] = score
   end
 end
-{% endhighlight %} 
+{% endhighlight %}
 
 **Grade-school:** Initialize an empty hash & and declare values as an array. To sort & return a hash: **hash.sort.to_h**.
 
@@ -83,7 +83,7 @@ end
 **Hello-world:**
 
 You can pass default argument to a ruby method :
-  
+
 {% highlight ruby linenos %}
 def hello(name = 'world')
   #some data
@@ -94,7 +94,7 @@ end
 
 You can minimize loop:
 {% highlight ruby linenos %}
-if year % 4 == 0 && year % 100 == 0 
+if year % 4 == 0 && year % 100 == 0
   year % 400 == 0 ? true : false
 elsif year % 4 == 0
   true
@@ -118,9 +118,8 @@ year % 400 == 0 || year % 4 == 0 && year % 100 != 0
 '0987654321'[0..2] # will result in '098'
 {% endhighlight %}
 
-**Raindrops:** Assing common values as constant. Avoid unnecessary computing. For example you only need to check if 3,5 & 7 are factors.
-    
+**Raindrops:** Assign common values as constant. Avoid unnecessary computing. For example you only need to check if 3,5 & 7 are factors.
+
 **Robot-name:** Shuffle method of Array (Can be applied to a-z but will be futile for 0-999 as it takes lots of memory & computation). Use **Default assignment \|\|=**
 
 That’s it for now. Stay tuned for more of my technical musings. You can also mention in comments how this blog helped you or if i missed something that should be included. Sayonara for now!
-
