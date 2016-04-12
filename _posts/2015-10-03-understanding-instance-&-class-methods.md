@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Understanding Instance & Class methods
 date: 2015-10-03
 ---
@@ -21,9 +22,8 @@ end
 {% endhighlight %}
 
 
-So, why did it throw an error, there is definitely a method called instance_method. What's happening here? Actually ruby is searching for a class method, because ruby will read it as 'self.instance_method'. Here self is the "class" itself, hence the error. 
+So, why did it throw an error, there is definitely a method called instance_method. What's happening here? Actually ruby is searching for a class method, because ruby will read it as 'self.instance_method'. Here self is the "class" itself, hence the error.
 
 Points to ponder:
 
   - Class methods do not have access to instance methods or instance variables. However instance methods can access both class methods and class variables.
-

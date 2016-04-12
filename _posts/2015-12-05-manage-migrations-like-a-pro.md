@@ -2,6 +2,7 @@
 layout: post
 title: Create Migrations Like A Pro!
 date: 2015-12-05
+comments: true
 ---
 
 There are certain times when you want to change the schema of your rails application database or

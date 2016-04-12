@@ -2,6 +2,7 @@
 layout: post
 title: Understanding PG HStore
 date: 2016-01-01
+comments: true
 ---
 
 Sometimes we may need to not only store plain attributes like string, integer or boolean but also more complex objects in our databases. Like a key-value pair, so lets see how we can achieve it in Postgres - Rails with hstore.
@@ -86,3 +87,18 @@ You can't pass an array as a variable in where clause, you have to pass it as a 
 Reference:
 
 * [How to handle key value data in postgresql via hstore](http://stormatics.com/howto-handle-key-value-data-in-postgresql-the-hstore-contrib/)
+
+<!-- http://nandovieira.com/using-postgresql-and-hstore-with-rails -->
+
+<!--   Dutylog.where("(properties -> '206B')::float > 0.0").sum("(properties -> '206B')::float")
+-->
+
+<!--  http://big-elephants.com/2012-10/aggregations-with-pg-hstore/ -->
+
+<!--     # select alloted->leave_definition_id as leave_definition_id, sum(lapsed) as lapsed_total group by leave_definition_id, lapsed
+ -->
+
+ <!--  https://www.reddit.com/r/PostgreSQL/comments/1z1fb6/help_me_improve_this_query_summing_hstore_values/ -->
+
+ <!-- https://gist.github.com/rapimo/3957743 -->
+ <!--  -->
