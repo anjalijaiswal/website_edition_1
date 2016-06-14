@@ -3,6 +3,7 @@ layout: post
 title: Understanding PG HStore
 date: 2016-01-01
 comments: true
+analytics: true
 ---
 
 Sometimes we may need to not only store plain attributes like string, integer or boolean but also more complex objects in our databases. Like a key-value pair, so lets see how we can achieve it in Postgres - Rails with hstore.

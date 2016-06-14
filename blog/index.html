@@ -2,13 +2,48 @@
 layout: default
 title: Anjali's Blog
 ---
-<div class="container text-center"> 
-  <h1>{{ page.title }}</h1>
-  <ul class="posts">
-    {% for post in site.posts %} 
-      <li><span>{{ post.date | date_to_string }}</span>
-        &raquo; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="mini-belt">{{ page.title }}</div>
+<div class="container text-center">
+  {% assign loopindex = 0 %}
+  {% for post in site.posts %}
+  {% assign loopindex = loopindex | plus: 1 %}
+  {% assign rowfinder = loopindex | modulo: 2 %}
+  {% if rowfinder == 1 %}
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <article class='blog-trailer'>
+        <header>
+          <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+          <span class="meta">{{ post.date | date_to_string }}</span>
+        </header>
+        <hr>
+        <div class="body">
+          <p>{{ post.excerpt }}</p>
+        </div>
+        <hr>
+        <div class="clearfix">
+          <a class="btn btn-read-more" href="{{ post.url }}">Read more</a>
+        </div>
+      </article>
+    </div>
+    {% elsif rowfinder == 0 %}
+    <div class="col-md-6 col-sm-6">
+      <article class='blog-trailer'>
+        <header>
+          <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+          <span class="meta">{{ post.date | date_to_string }}</span>
+        </header>
+        <hr>
+        <div class="body">
+          <p>{{ post.excerpt }}</p>
+        </div>
+        <hr>
+        <div class="clearfix">
+          <a class="btn btn-read-more" href="{{ post.url }}">Read more</a>
+        </div>
+      </article>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
 </div>

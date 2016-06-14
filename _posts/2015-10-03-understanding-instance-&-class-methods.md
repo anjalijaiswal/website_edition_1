@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: Understanding Instance & Class methods
 date: 2015-10-03
+analytics: true
 ---
 
 In programming world it’s often how we think about a particular problem that causes it not to work as we expected!
