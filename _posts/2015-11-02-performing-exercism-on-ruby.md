@@ -77,7 +77,7 @@ Anagrams are same if sorted. Select will return element if condition satisfies. 
 
 **Beer-songs:**
 ---------------
-[Follow this link](http://red-badger.com/blog/2014/08/20/i-spent-3-days-with-sandi-metz-heres-what-i-learned/){:target="_blank"}
+[Follow this link](http://red-badger.com/blog/2014/08/20/i-spent-3-days-with-sandi-metz-heres-what-i-learned/){:target="\_blank"}
 
 **Binary:**
 -----------
